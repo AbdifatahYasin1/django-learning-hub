@@ -158,6 +158,11 @@ A beginner-friendly Django project to help students learn core concepts like mod
 
 ---
 
+## Contributors
+
+See the list of awesome people who contributed to this project in the [CONTRIBUTORS](CONTRIBUTORS.md) file.
+
+
 ## ✅ Good Luck!
 
 Practice hands-on, follow the examples, and build projects to strengthen your understanding. Happy coding with Django!
