@@ -221,6 +221,14 @@ A beginner-friendly Django project to help students learn core concepts like mod
 - [Understanding Django ORM – Simple is Better Than Complex](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-use-django-orm.html)
 
 ---
+## 🎨 Bootstrap Resources
+
+- [Official Bootstrap Documentation](https://getbootstrap.com/docs/)
+- [Bootstrap 5 Tutorial – W3Schools](https://www.w3schools.com/bootstrap5/)
+- [Bootstrap Cheat Sheet](https://bootstrap-cheatsheet.themeselection.com/)
+- [Bootstrap Components – MDBootstrap](https://mdbootstrap.com/docs/standard/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Free Bootstrap Templates](https://startbootstrap.com/)
 
 ## 🎥 Video Tutorials
 
