@@ -1,3 +1,4 @@
+Sure! I added a **Django ORM resources** section under **Resources** for better clarity and also added a suggested place where you can link to your slides (I put it right after the Video Tutorials section). Here's your updated markdown with those additions:
 
 ````markdown
 # Django Learning Hub
@@ -100,22 +101,72 @@ A beginner-friendly Django project to help students learn core concepts like mod
 
 ---
 
-## 🧠 Assignments
+Absolutely! Here’s your **full updated Assignment section** in markdown, including the image example and instructions for Part 1 (Bootstrap templates) and Part 2 (full Django CRUD), ready to be added to your document:
 
+```markdown
 ### Assignment: Student Record System
+
+---
+
+#### Part 1: Frontend Templates with Bootstrap
+
+![Student Record System UI Example](StduentsUI.png)
+
+*Example of a simple Student Record System interface using Bootstrap:*
+
+- A header bar with the system name  
+- A search box to filter student records  
+- A table showing student ID, name, email  
+- Edit and Delete action buttons  
+- Add Student button for creating new entries  
+
+**Functional Requirements:**
+
+- Build static pages using Bootstrap that represent the student record system UI  
+- Student List page displaying multiple students (use static sample data)  
+- Student Detail page showing detailed info of a single student  
+- Add and Edit Student forms with proper Bootstrap form controls (no backend functionality yet)  
+- Navigation bar to navigate between pages  
+- Responsive design that works on desktop and mobile  
 
 **Requirements:**
 
-* CRUD operations for student records
-* Use of Django forms
-* User login required to add/edit/delete
-* Use Bootstrap in templates
+- Design and build static HTML templates for the Student Record System using Bootstrap  
+- Use Bootstrap components for navbar, forms, buttons, tables, etc.
 
 **Submission:**
 
-* Push code to your GitHub repo
-* Email the repo link to: `sendtohereyourdocuments@gmail.com`
-* Deadline: Sept 10, 2025, 11:59 PM
+- Push your static HTML + CSS templates to your GitHub repo  
+- Email the repo link to: `sendtohereyourdocuments@gmail.com`  
+- Deadline: August 20, 2025, 11:59 PM  
+
+---
+
+#### Part 2: Full Django CRUD and Backend Integration
+
+**Functional Requirements:**
+
+- Create a `Student` model with fields like name, age, email, and course  
+- Implement CRUD (Create, Read, Update, Delete) operations for student records  
+- Use Django forms and ModelForms for add/edit student functionality with validation  
+- Only authenticated users can add, edit, or delete students (login required)  
+- Display student data dynamically in templates  
+- Use Bootstrap to style the Django templates (reuse templates from Part 1)  
+- Implement navigation and user feedback (success/error messages)  
+
+**Requirements:**
+
+- Implement the full backend functionality in Django  
+- Integrate Bootstrap templates from Part 1 with dynamic data  
+- Use user authentication to protect sensitive operations  
+
+**Submission:**
+
+- Push your full Django project code to your GitHub repo  
+- Email the repo link to: `sendtohereyourdocuments@gmail.com`  
+- Deadline: Sept 10, 2025, 11:59 PM
+```
+
 
 ---
 
@@ -127,6 +178,11 @@ A beginner-friendly Django project to help students learn core concepts like mod
 * [Django REST Framework](https://www.django-rest-framework.org/)
 * [Simple is Better Than Complex](https://simpleisbetterthancomplex.com/)
 * [Real Python Django Tutorials](https://realpython.com/tutorials/django/)
+* **Django ORM Specific Resources:**
+
+  * [Django ORM Guide (official)](https://docs.djangoproject.com/en/stable/topics/db/queries/)
+  * [Django ORM Tutorial - Real Python](https://realpython.com/django-orm-explained/)
+  * [Understanding Django ORM - Simple is Better Than Complex](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-use-django-orm.html)
 
 ---
 
@@ -135,6 +191,14 @@ A beginner-friendly Django project to help students learn core concepts like mod
 * [Django Crash Course – Traversy Media](https://www.youtube.com/watch?v=e1IyzVyrLSU)
 * [Build a Blog with Django – Corey Schafer](https://www.youtube.com/watch?v=UmljXZIypDc)
 * [Python Django Tutorial for Beginners](https://www.youtube.com/watch?v=F5mRW0jo-U4)
+
+---
+
+## 📊 Slides & Presentation
+
+You can find the slides and presentation materials here:
+[**Chapter one**](ChapterOne.pptx)
+
 
 ---
 
@@ -162,9 +226,7 @@ A beginner-friendly Django project to help students learn core concepts like mod
 
 See the list of awesome people who contributed to this project in the [CONTRIBUTORS](CONTRIBUTORS.md) file.
 
-
 ## ✅ Good Luck!
 
 Practice hands-on, follow the examples, and build projects to strengthen your understanding. Happy coding with Django!
-
 
