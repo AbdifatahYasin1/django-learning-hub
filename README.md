@@ -208,59 +208,53 @@ A beginner-friendly Django project to help students learn core concepts like mod
 
 ---
 ```
-
-
----
-
 ## 📂 Resources
 
-* [Official Django Docs](https://docs.djangoproject.com/en/stable/)
-* [Django for Beginners (Book)](https://djangoforbeginners.com/)
-* [MDN Django Tutorials](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django)
-* [Django REST Framework](https://www.django-rest-framework.org/)
-* [Simple is Better Than Complex](https://simpleisbetterthancomplex.com/)
-* [Real Python Django Tutorials](https://realpython.com/tutorials/django/)
-* **Django ORM Specific Resources:**
-
-  * [Django ORM Guide (official)](https://docs.djangoproject.com/en/stable/topics/db/queries/)
-  * [Django ORM Tutorial - Real Python](https://realpython.com/django-orm-explained/)
-  * [Understanding Django ORM - Simple is Better Than Complex](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-use-django-orm.html)
+- [Official Django Docs](https://docs.djangoproject.com/en/stable/)
+- [Django for Beginners (Book)](https://djangoforbeginners.com/)
+- [MDN Django Tutorials](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django)
+- [Django REST Framework](https://www.django-rest-framework.org/)
+- [Simple is Better Than Complex](https://simpleisbetterthancomplex.com/)
+- [Real Python Django Tutorials](https://realpython.com/tutorials/django/)
+- **Django ORM Specific Resources:**
+   - [Django ORM Guide (official)](https://docs.djangoproject.com/en/stable/topics/db/queries/)
+   - [Django ORM Tutorial - Real Python](https://realpython.com/django-orm-explained/)
+   - [Understanding Django ORM - Simple is Better Than Complex](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-use-django-orm.html)
 
 ---
 
 ## 🎥 Video Tutorials
 
-* [Django Crash Course – Traversy Media](https://www.youtube.com/watch?v=e1IyzVyrLSU)
-* [Build a Blog with Django – Corey Schafer](https://www.youtube.com/watch?v=UmljXZIypDc)
-* [Python Django Tutorial for Beginners](https://www.youtube.com/watch?v=F5mRW0jo-U4)
+- [Django Crash Course – Traversy Media](https://www.youtube.com/watch?v=e1IyzVyrLSU)
+- [Build a Blog with Django – Corey Schafer](https://www.youtube.com/watch?v=UmljXZIypDc)
+- [Python Django Tutorial for Beginners](https://www.youtube.com/watch?v=F5mRW0jo-U4)
 
 ---
 
 ## 📊 Slides & Presentation
 
-You can find the slides and presentation materials here:
+You can find the slides and presentation materials here:  
 [**Chapter one**](ChapterOne.pptx)
-
 
 ---
 
 ## 💡 Final Exam Hints
 
-* Understand how Django handles routing via `urls.py`
-* Know how to use models to define data structures
-* Be able to use Django ORM for queries
-* Understand form submission and validation
-* Build and protect views using decorators like `@login_required`
-* Reuse HTML using Django template tags safely as shown below to avoid Jekyll errors:
+- Understand how Django handles routing via `urls.py`
+- Know how to use models to define data structures
+- Be able to use Django ORM for queries
+- Understand form submission and validation
+- Build and protect views using decorators like `@login_required`
+- Reuse HTML using Django template tags safely as shown below to avoid Jekyll errors:
 
-  ```django
-  {% raw %}
-  {% extends "base.html" %}
-  {% block content %}
-  <!-- Your content here -->
-  {% endblock %}
-  {% endraw %}
-  ```
+   ```django
+   {% raw %}
+   {% extends "base.html" %}
+   {% block content %}
+   <!-- Your content here -->
+   {% endblock %}
+   {% endraw %}
+   ```
 
 ---
 
@@ -271,4 +265,3 @@ See the list of awesome people who contributed to this project in the [CONTRIBUT
 ## ✅ Good Luck!
 
 Practice hands-on, follow the examples, and build projects to strengthen your understanding. Happy coding with Django!
-
