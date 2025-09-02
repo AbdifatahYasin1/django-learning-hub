@@ -101,70 +101,112 @@ A beginner-friendly Django project to help students learn core concepts like mod
 
 ---
 
-Absolutely! Here’s your **full updated Assignment section** in markdown, including the image example and instructions for Part 1 (Bootstrap templates) and Part 2 (full Django CRUD), ready to be added to your document:
-
-```markdown
-### Assignment: Student Record System
+# 📘 Assignment: Student Record System  
 
 ---
 
-#### Part 1: Frontend Templates with Bootstrap
+## 👥 Group Work
+- This assignment must be done in **groups of 3 students**.  
+- All group members must contribute equally.  
+- Only **one submission per group** is required.  
+- Clearly list the **names and IDs** of all group members in your submission.  
 
-![Student Record System UI Example](StduentsUI.png)
+---
+
+## Part 1: Frontend Templates with Bootstrap
+
+![🎨 Student Record System UI Example](StduentsUI.png)
 
 *Example of a simple Student Record System interface using Bootstrap:*
 
-- A header bar with the system name  
-- A search box to filter student records  
-- A table showing student ID, name, email  
-- Edit and Delete action buttons  
-- Add Student button for creating new entries  
-
-**Functional Requirements:**
-
-- Build static pages using Bootstrap that represent the student record system UI  
-- Student List page displaying multiple students (use static sample data)  
-- Student Detail page showing detailed info of a single student  
-- Add and Edit Student forms with proper Bootstrap form controls (no backend functionality yet)  
-- Navigation bar to navigate between pages  
-- Responsive design that works on desktop and mobile  
-
-**Requirements:**
-
-- Design and build static HTML templates for the Student Record System using Bootstrap  
-- Use Bootstrap components for navbar, forms, buttons, tables, etc.
-
-**Submission:**
-
-- Push your static HTML + CSS templates to your GitHub repo  
-- Email the repo link to: `sendtohereyourdocuments@gmail.com`  
-- Deadline: August 20, 2025, 11:59 PM  
+✅ A header bar with the system name  
+✅ A search box to filter student records  
+✅ A table showing **Student ID, Name, Email**  
+✅ **Edit** and **Delete** action buttons  
+✅ An **Add Student** button for creating new entries  
 
 ---
 
-#### Part 2: Full Django CRUD and Backend Integration
+### ⚙️ Functional Requirements (Part 1)
 
-**Functional Requirements:**
+- Build static pages using **Bootstrap** that represent the student record system UI  
+- Student **List Page** displaying multiple students (use static sample data)  
+- Student **Detail Page** showing info of a single student  
+- **Add/Edit Student Forms** with Bootstrap form controls (no backend yet)  
+- **Navigation bar** to switch between pages  
+- **Responsive design** for desktop and mobile  
 
-- Create a `Student` model with fields like name, age, email, and course  
-- Implement CRUD (Create, Read, Update, Delete) operations for student records  
-- Use Django forms and ModelForms for add/edit student functionality with validation  
-- Only authenticated users can add, edit, or delete students (login required)  
-- Display student data dynamically in templates  
-- Use Bootstrap to style the Django templates (reuse templates from Part 1)  
-- Implement navigation and user feedback (success/error messages)  
+---
 
-**Requirements:**
+### 📋 Requirements (Part 1)
 
-- Implement the full backend functionality in Django  
-- Integrate Bootstrap templates from Part 1 with dynamic data  
-- Use user authentication to protect sensitive operations  
+- Design and build static HTML templates using **Bootstrap**  
+- Use Bootstrap components: **navbar, forms, buttons, tables, etc.**
 
-**Submission:**
+---
 
-- Push your full Django project code to your GitHub repo  
+### 📤 Submission (Part 1)
+
+- Push your static **HTML + CSS templates** to your GitHub repo  
 - Email the repo link to: `sendtohereyourdocuments@gmail.com`  
-- Deadline: Sept 10, 2025, 11:59 PM
+- **Deadline: 🗓️ September 20, 2025 – 11:59 PM**  
+
+---
+
+## Part 2: Full Django CRUD and Backend Integration
+
+---
+
+### ⚙️ Functional Requirements (Part 2)
+
+- Create a `Student` model with fields: **name, age, email, course**  
+- Implement **CRUD** (Create, Read, Update, Delete) operations  
+- Use **Django Forms / ModelForms** for add/edit student (with validation)  
+- Require **authentication** (only logged-in users can add, edit, delete)  
+- Display student data dynamically in templates  
+- Reuse Bootstrap templates from Part 1  
+- Provide **user feedback** (success/error messages)  
+
+---
+
+### 📋 Requirements (Part 2)
+
+- Implement full backend functionality in **Django**  
+- Integrate Bootstrap templates with **dynamic data**  
+- Use Django’s **authentication system** for security  
+
+---
+
+### 📤 Submission (Part 2)
+
+- Push your full **Django project code** to your GitHub repo  
+- Email the repo link to: `sendtohereyourdocuments@gmail.com`  
+- **Deadline: 🗓️ October 15, 2025 – 11:59 PM**  
+
+---
+
+## 📝 Marks Distribution (Total: 15 Marks)
+
+| Part | Criteria | Marks |
+|------|----------|-------|
+| **Part 1** | UI Design with Bootstrap (Navbar, Table, Forms) | 4 |
+|          | Responsiveness (Mobile/Desktop) | 2 |
+|          | Code Quality & Organization | 1 |
+| **Part 2** | Django Model & CRUD Functionality | 3 |
+|          | Authentication & Security | 2 |
+|          | Integration with Bootstrap Templates | 3 |
+| **Total** |   | **15 Marks** |
+
+---
+
+## 📌 Timeline
+
+| Part | Task | Deadline |
+|------|------|-----------|
+| **Part 1** | Bootstrap Frontend Templates | 🗓️ September 20, 2025 |
+| **Part 2** | Django CRUD + Backend Integration | 🗓️ October 15, 2025 |
+
+---
 ```
 
 
