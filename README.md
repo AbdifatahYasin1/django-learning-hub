@@ -206,8 +206,6 @@ A beginner-friendly Django project to help students learn core concepts like mod
 | **Part 1** | Bootstrap Frontend Templates | 🗓️ September 20, 2025 |
 | **Part 2** | Django CRUD + Backend Integration | 🗓️ October 15, 2025 |
 
----
-```
 ## 📂 Resources
 
 - [Official Django Docs](https://docs.djangoproject.com/en/stable/)
@@ -216,10 +214,11 @@ A beginner-friendly Django project to help students learn core concepts like mod
 - [Django REST Framework](https://www.django-rest-framework.org/)
 - [Simple is Better Than Complex](https://simpleisbetterthancomplex.com/)
 - [Real Python Django Tutorials](https://realpython.com/tutorials/django/)
-- **Django ORM Specific Resources:**
-   - [Django ORM Guide (official)](https://docs.djangoproject.com/en/stable/topics/db/queries/)
-   - [Django ORM Tutorial - Real Python](https://realpython.com/django-orm-explained/)
-   - [Understanding Django ORM - Simple is Better Than Complex](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-use-django-orm.html)
+
+**Django ORM Specific Resources:**
+- [Django ORM Guide (official)](https://docs.djangoproject.com/en/stable/topics/db/queries/)
+- [Django ORM Tutorial – Real Python](https://realpython.com/django-orm-explained/)
+- [Understanding Django ORM – Simple is Better Than Complex](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-use-django-orm.html)
 
 ---
 
@@ -234,7 +233,7 @@ A beginner-friendly Django project to help students learn core concepts like mod
 ## 📊 Slides & Presentation
 
 You can find the slides and presentation materials here:  
-[**Chapter one**](ChapterOne.pptx)
+[**Chapter One**](ChapterOne.pptx)
 
 ---
 
@@ -245,7 +244,7 @@ You can find the slides and presentation materials here:
 - Be able to use Django ORM for queries
 - Understand form submission and validation
 - Build and protect views using decorators like `@login_required`
-- Reuse HTML using Django template tags safely as shown below to avoid Jekyll errors:
+- Reuse HTML using Django template tags safely, as shown below to avoid Jekyll errors:
 
    ```django
    {% raw %}
@@ -254,14 +253,3 @@ You can find the slides and presentation materials here:
    <!-- Your content here -->
    {% endblock %}
    {% endraw %}
-   ```
-
----
-
-## Contributors
-
-See the list of awesome people who contributed to this project in the [CONTRIBUTORS](CONTRIBUTORS.md) file.
-
-## ✅ Good Luck!
-
-Practice hands-on, follow the examples, and build projects to strengthen your understanding. Happy coding with Django!
