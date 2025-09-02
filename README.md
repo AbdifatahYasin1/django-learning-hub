@@ -230,6 +230,13 @@ A beginner-friendly Django project to help students learn core concepts like mod
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 - [Free Bootstrap Templates](https://startbootstrap.com/)
 
+## 🎥 Bootstrap Video Tutorials
+
+- [Bootstrap 5 Crash Course – Traversy Media](https://www.youtube.com/watch?v=4sosXZsdy-s)
+- [Bootstrap 5 Tutorial for Beginners – Academind](https://www.youtube.com/watch?v=Jyvffr3aCp0)
+- [Bootstrap 5 Responsive Website Tutorial](https://www.youtube.com/watch?v=J17vLwZKx0Y)
+- [Bootstrap 5 Grid System Explained](https://www.youtube.com/watch?v=qmPmwdshCMw)
+
 ## 🎥 Video Tutorials
 
 - [Django Crash Course – Traversy Media](https://www.youtube.com/watch?v=e1IyzVyrLSU)
