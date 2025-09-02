@@ -1,6 +1,3 @@
-Sure! I added a **Django ORM resources** section under **Resources** for better clarity and also added a suggested place where you can link to your slides (I put it right after the Video Tutorials section). Here's your updated markdown with those additions:
-
-````markdown
 # Django Learning Hub
 
 A beginner-friendly Django project to help students learn core concepts like models, views, templates, forms, and authentication through hands-on examples.
