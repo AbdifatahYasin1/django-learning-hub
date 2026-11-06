@@ -442,6 +442,7 @@ GitHub collaboration will be evaluated individually as well as at group level.
 3. Sakariye Clsaalan Maxamed
 4. Maxamuud Muuse Clraxmaan
 5. Hodoo Mawliid Xasan
+6. Mustafe Abdisamad Mohamoud
 
 **Project requirements:**
 - Register students.
