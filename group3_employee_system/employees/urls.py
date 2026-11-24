@@ -10,4 +10,9 @@ urlpatterns = [
     path('departments/add/', views.department_create, name='department_create'),
     path('departments/<int:pk>/edit/', views.department_update, name='department_update'),
     path('departments/<int:pk>/delete/', views.department_delete, name='department_delete'),
+    path('attendance/' , views.attendance_list, name='attendance_list'),
+     path('attendance/add/', views.attendance_create,name='attendance_create'),
+    path('attendance/<int:pk>/edit/', views.attendance_update,name='attendance_update'),
+    path('attendance/<int:pk>/delete/', views.attendance_delete,name='attendance_delete'),
+
 ]

@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Employee, Department
-from .forms import EmployeeForm, DepartmentForm
+from .models import Employee, Department,Attendance
+from .forms import EmployeeForm, DepartmentForm, AttendanceForm
 
 
 def employee_list(request):
@@ -73,3 +73,37 @@ def department_delete(request, pk):
         department.delete()
         return redirect('department_list')
     return render(request, 'department_confirm_delete.html', {'department': department})
+def attendance_list(request):
+    records = Attendance.objects.select_related('employee').order_by('-date')
+    return render(request, 'attendance_list.html', {'records': records})
+
+
+def attendance_create(request):
+    if request.method == 'POST':
+        form = AttendanceForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('attendance_list')
+    else:
+        form = AttendanceForm()
+    return render(request, 'employee_form.html', {'form': form, 'title': 'Add Attendance'})
+
+
+def attendance_update(request, pk):
+    record = get_object_or_404(Attendance, pk=pk)
+    if request.method == 'POST':
+        form = AttendanceForm(request.POST, instance=record)
+        if form.is_valid():
+            form.save()
+            return redirect('attendance_list')
+    else:
+        form = AttendanceForm(instance=record)
+    return render(request, 'employee_form.html', {'form': form, 'title': 'Edit Attendance'})
+
+
+def attendance_delete(request, pk):
+    record = get_object_or_404(Attendance, pk=pk)
+    if request.method == 'POST':
+        record.delete()
+        return redirect('attendance_list')
+    return render(request, 'attendance_confirm_delete.html', {'record': record})
