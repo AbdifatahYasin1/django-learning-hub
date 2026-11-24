@@ -7,7 +7,7 @@
 </div>
 <table class="table table-striped">
     <thead>
-        <tr><th>Name</th><th>Email</th><th>Position</th><th>Department</th><th>Salary</th></tr>
+        <tr><th>Name</th><th>Email</th><th>Position</th><th>Department</th><th>Salary</th><th>Actions</th></tr>
     </thead>
     <tbody>
     {% for e in employees %}
@@ -17,9 +17,13 @@
             <td>{{ e.position }}</td>
             <td>{{ e.department.name }}</td>
             <td>{{ e.salary }}</td>
+            <td>
+                <a href="{% url 'employee_update' e.pk %}" class="btn btn-sm btn-warning">Edit</a>
+                <a href="{% url 'employee_delete' e.pk %}" class="btn btn-sm btn-danger">Delete</a>
+            </td>
         </tr>
     {% empty %}
-        <tr><td colspan="5">No employees yet.</td></tr>
+        <tr><td colspan="6">No employees yet.</td></tr>
     {% endfor %}
     </tbody>
 </table>
