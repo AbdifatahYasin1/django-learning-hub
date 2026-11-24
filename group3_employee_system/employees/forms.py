@@ -1,5 +1,5 @@
 from django import forms
-from .models import Employee
+from .models import Employee, Department
 
 
 class EmployeeForm(forms.ModelForm):
@@ -9,6 +9,17 @@ class EmployeeForm(forms.ModelForm):
         widgets = {
             'date_hired': forms.DateInput(attrs={'type': 'date'}),
         }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            field.widget.attrs['class'] = 'form-control'
+
+
+class DepartmentForm(forms.ModelForm):
+    class Meta:
+        model = Department
+        fields = '__all__'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
