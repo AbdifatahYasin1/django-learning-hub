@@ -1,5 +1,5 @@
 env/
 __pycache__/
 *.pyc
-dbsqlite3
-db.sqlite3
+
+
