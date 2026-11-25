@@ -1,11 +1,21 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Employee, Department,Attendance
 from .forms import EmployeeForm, DepartmentForm, AttendanceForm
+from django.db.models import Q
 
 
 def employee_list(request):
-    employees = Employee.objects.select_related('department').all()
-    return render(request, 'employee_list.html', {'employees': employees})
+    q = request.GET.get('q' , '')
+    employees = Employee.objects.all()
+    if q: 
+        employees =employees.filter(
+             Q(first_name__icontains=q) | 
+             Q(last_name__icontains=q) | 
+             Q(email__icontains=q) |
+             Q(position__icontains=q) 
+        )
+    return render(request, 'employee_list.html', {'employees': employees, 'q' : q})
+
 
 
 def employee_create(request):
@@ -40,8 +50,11 @@ def employee_delete(request, pk):
 
 
 def department_list(request):
+    q = request.GET.get('q' , '')
     departments = Department.objects.all()
-    return render(request, 'department_list.html', {'departments': departments})
+    if q: 
+        departments = departments.filter( Q(name__icontains=q) | Q(description__icontains=q))
+    return render(request, 'department_list.html', {'departments': departments,'q' : q})
 
 
 def department_create(request):
@@ -73,9 +86,16 @@ def department_delete(request, pk):
         department.delete()
         return redirect('department_list')
     return render(request, 'department_confirm_delete.html', {'department': department})
+
 def attendance_list(request):
-    records = Attendance.objects.select_related('employee').order_by('-date')
-    return render(request, 'attendance_list.html', {'records': records})
+       q = request.GET.get('q' , '')
+       records = Attendance.objects.select_related('employee').order_by('-date')
+       if q: 
+         records = records.filter( 
+             Q(employee__first_name__icontains=q) |
+             Q(employee__last_name__icontains=q) |
+               Q(status__icontains=q))
+       return render(request, 'attendance_list.html', {'records': records,'q': q})
 
 
 def attendance_create(request):
