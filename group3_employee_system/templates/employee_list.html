@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Employees{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Employees</h2>
+    <a href="{% url 'employee_create' %}" class="btn btn-primary">+ Add Employee</a>
+</div>
+<form method="get" class="d-flex my-3">
+<input type="text" name="q" value="{{q}}" class="form-control me-2" placeholder="Search...">
+<button type= "submit" class="btn btn-primary">Search</button>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr><th>Name</th><th>Email</th><th>Position</th><th>Department</th><th>Salary</th><th>Actions</th></tr>
+    </thead>
+    <tbody>
+    {% for e in employees %}
+        <tr>
+            <td>{{ e.first_name }} {{ e.last_name }}</td>
+            <td>{{ e.email }}</td>
+            <td>{{ e.position }}</td>
+            <td>{{ e.department.name }}</td>
+            <td>{{ e.salary }}</td>
+            <td>
+                <a href="{% url 'employee_update' e.pk %}" class="btn btn-sm btn-warning">Edit</a>
+                <a href="{% url 'employee_delete' e.pk %}" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+    {% empty %}
+        <tr><td colspan="6">No employees yet.</td></tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
